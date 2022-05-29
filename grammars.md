@@ -655,3 +655,15 @@ auto [a,b]=a0;
 
 ### if语句中包含初始化语句
 
+```cpp
+int main()
+{
+    int a;
+    cin >> a;
+    if(int x=0;x<=a)
+    {
+        std::cout<<"qwq";
+    }
+}
+```
+
