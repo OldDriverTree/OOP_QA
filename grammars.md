@@ -637,3 +637,17 @@ The most comfortable way to "open" a parameter pack is to use a recursive functi
 为了区分NULL和0，C++11引入了空指针nullptr。nullptr的类型为std::nullptr_t而非指针或int，可以保证nullptr表示空指针而不是0。
 在使用空指针时，应该尽量使用nullptr而不是NULL。
 
+
+
+### 结构化绑定 in C++17
+
+```cpp
+struct A {
+    int a;
+    int b;
+};
+A a0;
+auto [a,b]=a0;
+//a=a0.a, b=a0.b
+```
+
